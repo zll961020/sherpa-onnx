@@ -23,6 +23,9 @@ void PybindHomophoneReplacer(py::module *m) {
       .def_readwrite("rule_fsts", &PyClass::rule_fsts)
       .def_readwrite("debug", &PyClass::debug)
       .def("__str__", &PyClass::ToString);
+  py::class_<HomophoneReplacer>(*m, "HomophoneReplacer")
+      .def(py::init<const HomophoneReplacerConfig &>())
+      .def("apply", &HomophoneReplacer::Apply);   // Apply(std::string)
 }
 
 }  // namespace sherpa_onnx

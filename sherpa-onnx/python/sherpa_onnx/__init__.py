@@ -9,6 +9,7 @@ from _sherpa_onnx import (
     FastClustering,
     FastClusteringConfig,
     FeatureExtractorConfig,
+    HomophoneReplacer,
     HomophoneReplacerConfig,
     OfflineCanaryModelConfig,
     OfflineCtcFstDecoderConfig,
