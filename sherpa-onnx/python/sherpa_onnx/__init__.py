@@ -1,4 +1,4 @@
-from _sherpa_onnx import (
+from sherpa_onnx.lib._sherpa_onnx import (
     Alsa,
     AudioEvent,
     AudioTagging,
@@ -45,6 +45,7 @@ from _sherpa_onnx import (
     OfflineTransducerModelConfig,
     OfflineTts,
     OfflineTtsConfig,
+    OfflineTtsKittenModelConfig,
     OfflineTtsKokoroModelConfig,
     OfflineTtsMatchaModelConfig,
     OfflineTtsModelConfig,
